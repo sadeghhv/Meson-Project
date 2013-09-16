@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-	width 	: 1278px;
+	width 	: 1280px;
 	height	: 934px;
 }
 
@@ -19,4 +19,58 @@ header{
 	min-height	: 226px;
 	background-image	: url('images/bg-menu.png');
 	background-position	: top;
+}
+
+div.langen{
+	z-index	: 2;
+}
+
+div.langfa{
+	z-index	: 2;
+}
+
+div.langen,
+div.langfa{
+	background-color	: hsla(293, 61%, 26%, 1);
+	-webkit-border-radius	: 100px;
+	-moz-border-radius		: 100px;
+	-o-border-radius		: 100px;
+	border-radius			: 100px;
+	opacity	: 0.5;
+	cursor	: pointer;
+	-webkit-backface-visibility	: hidden;
+}
+
+div.langen:hover{
+	-webkit-transform	: perspective( 600px ) rotateX( 180deg );
+	-webkit-transition	: all 800ms ease-in-out;
+	-moz-transform	: perspective( 600px ) rotateX( 180deg );
+	-moz-transition	: all 800ms ease-in-out;
+	-o-transform	: perspective( 600px ) rotateX( 180deg );
+	-o-transition	: all 800ms ease-in-out;
+}
+
+div.langfa:hover{
+	-webkit-transform	: perspective( 600px ) rotateX( -180deg );
+	-webkit-transition	: all 800ms ease-in-out;
+	-moz-transform	: perspective( 600px ) rotateX( -180deg );
+	-moz-transition	: all 800ms ease-in-out;
+	-o-transform	: perspective( 600px ) rotateX( -180deg );
+	-o-transition	: all 800ms ease-in-out;
+}
+
+a.langen,
+a.langfa{
+	color		: white;
+	font-size	: 20px;
+	font-family	: arial;
+	text-align	: center;
+}
+
+a.langfa{
+	margin-top: 10px;
+}
+
+.lang{
+	outline: solid 1px yellow;
 }
